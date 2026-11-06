@@ -262,7 +262,7 @@ jobs:
 
       - name: 🎁 Package with AnyKernel3
         run: |
-          git clone --depth=1 https://github.com/osm0sis/AnyKernel3 AnyKernel3
+          git clone --depth=1 https://github.com/sgrchll1/AnyKernel3 AnyKernel3
           rm -rf AnyKernel3/.git AnyKernel3/*.zip
           cp "$IMG_PATH" AnyKernel3/
           sed -i "s/device.name1=.*/device.name1=${CODENAME}/" AnyKernel3/anykernel.sh || true
